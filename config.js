@@ -4,7 +4,7 @@ let chalk = require('chalk')
 global.owner = [
   ['6287898307350'],
   ['6287898307350'],
-  ['6287898307350', 'Owner', true]
+  ['6285756826050', 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -40,8 +40,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@penta_bot'
-  var sticker_author = 'penta'
+  var sticker_name = 'Bot-Chan'
+  var sticker_author = 'Punya Fathir'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -58,7 +58,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = '© Gempy'
+global.wm = 'Bot-Chan'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
